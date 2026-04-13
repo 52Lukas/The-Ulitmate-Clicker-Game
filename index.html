@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Ultimate Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="background"></div>
+
+<!-- 🎵 MUSIC UI -->
+<div id="musicBox">
+    <div id="songName">---</div>
+    <div id="musicControls">
+        <button onclick="prevSong()">⏮</button>
+    <button onclick="toggleMusic()" id="playPauseBtn">▶️</button>
+    <button onclick="nextSong()">⏭</button>
+    </div>
+</div>
+
+<!-- 🔊 VOLUME -->
+<div id="volumeBox">
+    <button onclick="volumeDown()">➖</button>
+    <button onclick="volumeUp()">➕</button>
+</div>
+
+<!-- TOPBAR -->
+<div id="topbar">
+    <button class="shop-btn" onclick="openShop()">🛒 Shop</button>
+</div>
+
+<!-- GAME -->
+<div id="game">
+    <h1>The Ultimate Clicker 🚀</h1>
+    <div id="score">0</div>
+
+    <button id="clickBtn" onclick="addPoint()">🖱️ Klick</button>
+    <button onclick="startMusic()">🎵 Start</button>
+</div>
+
+<!-- SHOP -->
+<div id="shopMenu">
+
+    <div id="shopHeader">
+        <h2>🛒 Shop</h2>
+        <button id="closeBtn" onclick="closeShop()">✖</button>
+    </div>
+
+    <div class="section">
+        <h3>⚡ Upgrades</h3>
+        <button onclick="buyAuto()">⚡ Auto Click (50)</button>
+        <button onclick="buyMultiplier()">💥 Multiplier (100)</button>
+    </div>
+
+    <div class="section">
+        <h3>🌍 Themes</h3>
+        <button onclick="buyTheme('lava',200)">🌋 Lava (200)</button>
+        <button onclick="buyTheme('sky',300)">☁️ Himmel (300)</button>
+        <button onclick="buyTheme('galaxy',500)">🌌 Galaxy (500)</button>
+    </div>
+
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div id="sidebar">
+            <button onclick="switchTab('upgrades')">⚙️</button>
+            <button onclick="switchTab('themes')">🌍</button>
+        </div>
+
+    </div>
+
+</div>
+
+<audio id="bgMusic" loop></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

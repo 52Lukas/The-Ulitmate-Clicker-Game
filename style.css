@@ -1,0 +1,126 @@
+/* RESET (fix weißer Balken) */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #0f0f1a;
+    font-family: Arial;
+}
+
+/* BACKGROUND */
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0f0f1a;
+    z-index: -1;
+}
+
+/* GAME */
+#game {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#score {
+    font-size: 60px;
+    margin: 20px;
+}
+
+/* BUTTONS */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#clickBtn {
+    background: limegreen;
+}
+
+.shop-btn {
+    background: purple;
+    color: white;
+}
+
+/* TOPBAR */
+#topbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* SHOP */
+#shopMenu {
+    position: fixed;
+    top: 120px;
+    right: 40px;
+    background: #4b0082;
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+    z-index: 10;
+    width: 260px;
+}
+
+/* HEADER */
+#shopHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#closeBtn {
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+/* SHOP CONTENT */
+#shopContent {
+    display: flex;
+}
+
+.item {
+    background: rgba(0,0,0,0.4);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* SIDEBAR */
+#sidebar {
+    width: 80px;
+    display: none;
+    flex-direction: column;
+}
+
+/* 🎵 MUSIC UI */
+#musicBox {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 2px solid cyan;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#musicControls {
+    display: flex;
+    gap: 5px;
+}
+
+/* 🔊 VOLUME */
+#volumeBox {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
